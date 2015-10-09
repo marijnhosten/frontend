@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>formulier</title>
+    <link href="style/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>contact info</legend>
+            <!-- nog geen required of andere HTML5 attributes, doen we samen met Modernizr-->
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" placeholder="Jouw voornaam" />
+
+            <label for="familienaam">Naam:</label>
+            <input type="text" id="familienaam" placeholder="Jouw familienaam"/>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Jouw e-mailadres"/>
+
+            <!--werk unobtrusive ! Geen onclick='  ' -->
+            <input type="submit" id="submitButton" name="submitButton" />
+
+        </fieldset>
+    </form>
+    <script src="scripts/validate.js"></script>
+    <script src="scripts/modernizr.js"></script>
+</body>
+</html>

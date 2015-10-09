@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Navigator</title>
+    <style>
+        ul {
+        list-style-type: none ;
+        }
+
+        li span {
+        font-weight: bold ;
+        display: inline-block ;
+        width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Browser Info</legend>
+        <div id="info"></div>
+
+    </fieldset>
+
+    <script>
+        //00.variabelen (Globale variabelen zijn :( .   )
+        var content = "<ul>";
+       
+        for (var property in navigator) {
+            //Property bevat hier de eigenschap naam ve object -> navigator.property is "undefined" !
+            content += "<li><span>"+ property  + ":</span>"+ navigator[property] + "</li>"
+        }
+
+        content += "</ul>";
+        document.getElementById("info").innerHTML = content;
+    </script>
+
+
+</body>
+</html>

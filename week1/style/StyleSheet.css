@@ -1,0 +1,52 @@
+﻿     html {
+            font-family: Verdana, sans-serif;
+        }
+
+        body {
+            background-color: cadetblue;
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto 0 auto;
+        }
+
+        label {
+            width: 75px;
+            float: left;
+        }
+
+        input[type='text'] {
+            width: 70%;
+            display: block;
+            margin: 0 0 10px 20px;
+            float: left;
+        }
+
+        .focused {
+            border: 1px solid blue;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        .valid {
+            border: 1px solid green;
+        }
+
+        fieldset {
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            background-color: #eee;
+        }
+
+        legend {
+            margin: 15px;
+            padding: 10px 20px;
+            border: black solid 1px;
+            background-color: black;
+            border-radius: 7px;
+            color: white;
+        }
